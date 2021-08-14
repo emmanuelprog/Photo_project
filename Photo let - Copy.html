@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Photolet</title>
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<link rel="stylesheet" href="photo let.css" />
+
+</head>
+
+<body class="body">
+    <div class="suspendedmenu">
+        <nav id="secondmynav">
+                <ul class="secondmenunav">
+                    <li><a href="#" id="home" onmouseover="bgChangehome()" onmouseout="bgChangehome1()">Home</a></li>
+                    <li><a href="#imagesdiv" id="port" onmouseover="bgChangeport()" onmouseout="bgChangeport1()">Portfolio</a></li>
+                    <li><a href="#myform" id="book" onmouseover="bgChangebook()" onmouseout="bgChangebook1()">Bookings</a></li>
+                    <li><a href="#main_section" id="blog" onmouseover="bgChangeblog()" onmouseout="bgChangeblog1()">Blog</a></li>
+                    <li><a href="#thefooter" id="cont" onmouseover="bgChangecont()" onmouseout="bgChangecont1()">Contact</a></li>
+                </ul>
+        </nav>
+    </div>
+	<div id="big_wrapper">
+        
+    	<header id="top_header">
+        	<h1><a href="#"><img src="logo1.png" height="50"/> <!--<span class="photo">Photo</span><span class="site">Let</span>--></a></h1>
+        </header>
+        <!--<hr color="#333"/>-->
+        <nav id="mynav">
+        	<ul class="menunav">
+            	<li class="active"><a href="#">Home</a></li>
+                <li><a href="#imagesdiv">Portfolio</a></li>
+                <li><a href="#myform">Bookings</a></li>
+                <li><a href="#main_section">Blog</a></li>
+                <li><a href="#thefooter">Contact</a></li>
+            </ul>
+        </nav><!--<hr color="#333"/>-->
+        
+        <!--<a target="_blank" href="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg"><img src="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg" alt="pebble" /></a>-->
+        <!--This is for the media screen 300 to 500-->
+        <div id="menuicon" onclick="menufunction()">&#x2630</div>
+        <div id="menupop" class="dropdown-content">                
+            <a href="#">Home</a>
+            <a href="#imagesdiv">Portfolio</a>
+            <a href="#myform">Bookings</a>
+            <a href="#main_section">Blog</a>
+            <a href="#thefooter">Contact</a> 
+        </div>
+
+
+    </div>
+    
+    
+    <div id="imagesdiv">
+            <div id="top-content">
+                <img src="images/image (1).jpg" height="300"/>
+                <img src="images/image (2).jpg" height="300"/>
+                <img src="images/image (3).jpg" height="300"/>
+                <img src="images/image (4).jpg" height="300"/>
+                <img src="images/image (5).jpg" height="300"/>
+                <img src="images/image (6).jpg" height="300"/>
+                    
+            </div>
+            <div id="top-content-desc1">
+                    <h2>Your image is Precious</h2>
+                    <h3>Save every moment</h3>
+                    <p> we are here to help you with your images and help you to keep your precious moment.</p>
+                    <p>we will be able to keep you and record your precious moment </p>
+            </div>
+    </div>
+    <div id="imagesdiv">
+        <div id="top-content-desc2">
+                <h2>Your image is Precious</h2>
+                <h3>Save every moment</h3>
+                <p> we are here to help you with your images and help you to keep your precious moment.</p>
+                <p>we will be able to keep you and record your precious moment </p>
+        </div>
+        <div id="top-content2">
+            <img src="images/image (7).jpg" height="300"/>
+            <img src="images/image (8).jpg" height="300"/>
+            <img src="images/image (9).jpg" height="300"/>
+            <img src="images/image (10).jpg" height="300"/>
+            <img src="images/image (11).jpg" height="300"/>
+            <img src="images/image (12).jpg" height="300"/>
+        </div>
+    </div>
+    
+    <div id="myform">
+        <form class="form-horizontal" role="form">
+            <h3>Booking By(contact person)</h3><hr/>
+            <div class="form-group"> 
+                <label for="name" class="col-lg-2 col-sm-2 control-label">FirstName</label> 
+                <div class="col-lg-10"> 
+                    <input class="form-control" id="firstname" placeholder="First Name" type="text"> 
+                </div> 
+            </div>
+            <div class="form-group"> 
+                <label for="name" class="col-lg-2 col-sm-2 control-label">LastName</label> 
+                <div class="col-lg-10"> 
+                    <input class="form-control" id="lastname" placeholder="Last Name" type="text"> 
+                </div> 
+            </div>
+            <div class="form-group"> 
+                <label for="name" class="col-lg-2 col-sm-2 control-label">Email</label> 
+                <div class="col-lg-10"> 
+                    <input class="form-control" id="email" placeholder="Enter Email" type="email"> 
+                </div> 
+            </div>
+            <div class="form-group"> 
+                <label for="name" class="col-lg-2 col-sm-2 control-label">Phone Number</label> 
+                <div class="col-lg-10"> 
+                    <input class="form-control" id="phonenumber" placeholder="Phone Number" type="number"> 
+                </div> 
+            </div>
+            <h3 class="bkfor">Booking For</h3><hr/>
+
+            <div class="form-group">
+                <label>Category</label>
+                <select class="form-control input-lg m-bot15" id="view" onchange="myFunction()"> 
+                    <option selected="selected">Select</option> 
+                    <option>Self</option> 
+                    <option>Others(single)</option> 
+                    <option>Group</option>
+                    <option>Family</option>
+                </select>
+            </div>
+
+            <div id="bookingforself">                    
+                    <div class="formselect"> 
+                        <div class="form-group">
+                            <label>Age</label>
+                            <select class="form-control input-lg m-bot15"> 
+                                <option selected="selected">Select</option> 
+                                <option>0-10</option> 
+                                <option>11-20</option>
+                                <option>21-30</option>
+                                <option>31-40</option> 
+                                <option>41-50</option>
+                                <option>51-60</option>
+                                <option>60-Above</option>  
+                            </select>
+                        </div>                                      
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select class="form-control input-lg m-bot15"> 
+                                <option selected="selected">Select</option> 
+                                <option>Male</option> 
+                                <option>Female</option>                         
+                            </select>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="name" class="col-lg-2 col-sm-2 control-label">Date of Shoot</label> 
+                            <div class="col-lg-10"> 
+                                <input class="form-control" id="date" type="date"> 
+                            </div> 
+                        </div>                  
+                    </div>                    
+                    <div class="form-group"> 
+                        <label for="name" class="col-lg-2 col-sm-2 control-label">Comment</label> 
+                        <div class="col-lg-10"> 
+                            <textarea class="form-control" id="comment" placeholder="further information"></textarea> 
+                        </div> 
+                    </div>
+                    <div class="form-group"> 
+                        <div class="col-lg-offset-2 col-lg-10"> 
+                            <button type="submit" class="btn btn-danger" id="bookbtn">Submit</button> 
+                        </div> 
+                    </div>
+                </div>
+            
+            <div id="bookingforgroup">
+                <div class="formselect">
+                    <div class="form-group">
+                        <label>Age Range</label><br/>
+                        <label>From</label>
+                        <div class="col-lg-10"> 
+                            <input class="form-control" id="agefrom" placeholder="from" type="number"> 
+                        </div>
+                        <label>To</label>
+                        <div class="col-lg-10"> 
+                            <input class="form-control" id="toage" placeholder="to" type="number"> 
+                        </div>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="name" class="col-lg-2 col-sm-2 control-label">Number of persons</label> 
+                        <div class="col-lg-10"> 
+                            <input class="form-control" id="person" placeholder="No of persons" type="number"> 
+                        </div> 
+                    </div>                
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select class="form-control input-lg m-bot15"> 
+                            <option selected="selected">Select</option> 
+                            <option>Male</option> 
+                            <option>Female</option>
+                            <option>Mixed</option>  
+                        </select>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="name" class="col-lg-2 col-sm-2 control-label">Date of Shoot</label> 
+                        <div class="col-lg-10"> 
+                            <input class="form-control" id="date" type="date"> 
+                        </div> 
+                    </div>                  
+                </div>
+                <div class="form-group"> 
+                    <label for="name" class="col-lg-2 col-sm-2 control-label">Comment</label> 
+                    <div class="col-lg-10"> 
+                        <textarea class="form-control" id="comment" placeholder="further information"></textarea> 
+                    </div> 
+                </div>
+                <div class="form-group"> 
+                    <div class="col-lg-offset-2 col-lg-10"> 
+                        <button type="submit" class="btn btn-danger" id="bookbtn">Submit</button> 
+                    </div> 
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="mainContent">    
+        <section id="main_section">
+        	<article class="first_article">
+            	<header>
+                	<hgroup>
+                    	<h1>Title of Article</h1>
+                        <h2>Subtitle of Article</h2>
+                    </hgroup>
+                </header>
+               
+                <a target="_blank" href="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg"><img src="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg" alt="pebble" width="150"/></a>
+                <a target="_blank" href="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg"><img src="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg" alt="pebble" width="150"/></a>
+                <a target="_blank" href="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg"><img src="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg" alt="pebble" width="150"/></a>
+                <a target="_blank" href="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg"><img src="poYBAFeWzqOAdTbQAATzmy-h8IQ438.jpg" alt="pebble" width="150"/></a>
+                <hr/>
+                <content class="para">
+                <p>My first paragraph of this article.</p> 
+                <p>Welcome to the learn website where learning is possible in the comfort of your home or where ever you find comfort.</p>
+                <p>This platform provides you with tools and resources that will educate inform you in any area of interest as provided on this platform</p>
+                <p>We intent to expand the scope of the courses and resources that we have available inorder to meetthe need of various person around the world. you can be of help in that regard when you make use of of feedback platform to communicate to us as regarding courses that you are interested in but cannot fing on tour platform</p>
+                <p>our resources range from videos, document format e.g. pdf, doc. e.t.c, audios, and various other format depending on the your preference</p>
+                <p>We are interested in satisfying the desires of those that use our platform. we therefore provide world class teaching resources so that they can be fully inform with the lastest in every area or field of study. </p>
+                <p>We welcome you again to <a href="learn.html">learn</a>: a place where learning is posibble</p>
+                </content>
+                
+                <hr/>
+                <footer class="author">
+                	<p> - written by Emmanuel</p>
+                </footer>
+            </article>
+           
+            <article class="second_article">
+            	<header
+                	<hgroup>
+                    	<h1>Title of Second Article</h1>
+                        <h2>Subtitle of Second Article</h2>
+                    </hgroup>
+                </header>
+                
+                <a target="_blank" href="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg"><img src="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg" alt="lion" width="150"/></a>
+                <a target="_blank" href="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg"><img src="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg" alt="lion" width="150"/></a>
+                <a target="_blank" href="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg"><img src="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg" alt="lion" width="150"/></a>
+                <a target="_blank" href="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg"><img src="q4YBAFi_w9WAA1dyAAk-SSzGJuQ283.jpg" alt="lion" width="150"/></a>
+                <hr/>
+                
+                <p>My first paragraph of the secondarticle.</p>
+                <p>My second paragraph of the secondarticle.</p>
+                <hr/>
+                <footer class="author">
+                	<p> - written by Emmanuel</p>
+                </footer>
+            </article>
+        </section>
+        
+        <aside id="side_news">
+        	<h3>News</h3>
+            <p>Revival is comming!!!!</p>
+        </aside>
+    </div>
+
+    <div id="thefooter">
+        <div id="contact">
+            <div id="address">
+                <h2>Address</h2>
+                <p>No. 9 future website on the internet</p>
+                <p>Location around the world</p>
+                <p>Wherever you are at anytime</p>
+
+            </div>
+            <div id="social">
+                <h2>Social Networks</h2>
+                <p>facebook</p>
+                <p>twitter</p>
+                <p>instagram</p>
+                <p>photolet</p>
+
+            </div>
+            <div id="phonemail">
+                <h2>Telephone</h2>
+                <p>Whatsapp no</p>
+                <p>phone number</p>
+                <p>Email@email.com</p>
+
+            </div>
+        </div>
+        
+        
+        <footer id="footer">
+                <hr/>
+        	<p><h4><a href="learn.html">PhotoLet</a>  Copyright &copy; 2019 </h4></p> 
+        </footer>
+
+    </div>
+    
+    
+    
+    
+    
+
+
+
+    <script>
+
+        /*document.getElementsByClassName('home').addEventListener('mouseover', function(){
+            document.getElementsByClassName('home').style.backgroundColor="#FC7243";
+        });*/
+
+        /*document.getElementById('port').addEventListener('onmouseover', function(){
+            document.getElementById('port').style.backgroundColor="#FC7243";
+        });*/
+
+        /*document.getElementsByClassName('book').addEventListener('mouseover', function(){
+            document.getElementsByClassName('book').style.backgroundColor="#FC7243";
+        });*/
+        function bgChangehome(){
+            document.getElementById('home').style.backgroundColor = "#FC7243";
+        }
+        function bgChangehome1(){
+            document.getElementById('home').style.backgroundColor = "rgb(27, 43, 71)";
+        }
+
+
+        function bgChangeport(){
+            document.getElementById('port').style.backgroundColor = "#FC7243";
+        }
+        function bgChangeport1(){
+            document.getElementById('port').style.backgroundColor = "rgb(27, 43, 71)";
+        }
+
+        function bgChangebook(){
+            document.getElementById('book').style.backgroundColor = "#FC7243";
+        }
+        function bgChangebook1(){
+            document.getElementById('book').style.backgroundColor = "rgb(27, 43, 71)";
+        }
+
+        function bgChangeblog(){
+            document.getElementById('blog').style.backgroundColor = "#FC7243";
+        }
+        function bgChangeblog1(){
+            document.getElementById('blog').style.backgroundColor = "rgb(27, 43, 71)";
+        }
+
+        function bgChangecont(){
+            document.getElementById('cont').style.backgroundColor = "#FC7243";
+        }
+        function bgChangecont1(){
+            document.getElementById('cont').style.backgroundColor = "rgb(27, 43, 71)";
+        }
+
+
+
+
+
+
+        function myFunction() {
+            var view = document.getElementById("view");
+            //var viewit = document.getElementsByClassName("bookingfor");
+
+            if (view.value == "Family" || view.value == "Group"){
+                //console.log(viewit);
+                document.getElementById("bookingforgroup").style.display = "block";
+                document.getElementById("bookingforself").style.display = "none";
+            }else if (view.value == "Self" || view.value == "Others(single)"){
+                document.getElementById("bookingforself").style.display = "block";
+                document.getElementById("bookingforgroup").style.display = "none"; 
+            }else {
+                document.getElementById("bookingforself").style.display = "none";
+                document.getElementById("bookingforgroup").style.display = "none";                
+            }
+           
+        } 
+
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+
+        var navbar = document.getElementById("secondmynav");
+        var sticky = navbar.offsetTop;
+        var x = document.getElementById("secondmynav");
+        var h = x.firstElementChild.firstElementChild;
+        var p = h.nextElementSibling;
+        var b = p.nextElementSibling;
+        var blog = b.nextElementSibling;
+        var l = x.firstElementChild.lastElementChild;
+
+        var Portfolio = document.getElementById("imagesdiv")
+        var Booking = document.getElementById("myform")
+        var Home = document.getElementById("big_wrapper")
+        var Blogcontent = document.getElementById("main_section")
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {                
+                navbar.style.top = "0";
+                navbar.style.display = "block";
+                navbar.style.position ="fixed";
+                navbar.classList.add("sticky")
+            } else {
+                navbar.style.top = "-50px";
+                navbar.classList.remove("sticky");
+            }
+
+            if (document.documentElement.scrollTop > Home.offsetTop/*document.documentElement.scrollTop > 150 && document.documentElement.scrollTop < 780*/) {
+                /*h.firstChild.style.backgroundColor ="#FC7243";*/
+                p.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                b.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                blog.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                l.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+
+
+            }else if (document.documentElement.scrollTop > Portfolio.offsetTop/*document.documentElement.scrollTop > 780 && document.documentElement.scrollTop < 1432*/) {
+                p.firstChild.style.backgroundColor ="#FC7243";
+                b.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                blog.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                l.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                h.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+
+            } 
+            else if (document.documentElement.scrollTop > Booking.offsetTop/*document.documentElement.scrollTop > 1432 && document.documentElement.scrollTop < 1982*/) {
+                b.firstChild.style.backgroundColor ="#FC7243";
+                blog.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                p.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                l.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                h.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                                              
+            }
+            else if (document.documentElement.scrollTop > Blogcontent.offsetTop /*document.documentElement.scrollTop > 1982 && document.documentElement.scrollTop < 3030*/)  {
+                blog.firstChild.style.backgroundColor ="#FC7243";
+                b.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                p.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                l.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                h.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                
+            }else if (document.documentElement.scrollTop >= 3030){
+                l.firstChild.style.backgroundColor ="#FC7243";
+                p.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                b.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                blog.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                h.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+               
+            }else{
+                p.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                b.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                blog.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                l.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+                h.firstChild.style.backgroundColor ="rgb(27, 43, 71)";
+            }            
+        }
+
+
+
+       /* window.onscroll = function() {myscrollFunction()};*/
+        
+
+       /* function myscrollFunction() {
+            if (document.documentElement.scrollTop > 780 && document.documentElement.scrollTop < 1432) {
+                p.firstChild.style.backgroundColor ="#FC7243";
+            } 
+            else if (document.documentElement.scrollTop > 1432 && document.documentElement.scrollTop < 1982) {
+                b.firstChild.style.backgroundColor ="#FC7243";               
+            }
+            else if (document.documentElement.scrollTop >= 1982) {
+                l.firstChild.style.backgroundColor ="#FC7243";
+            }
+            else {
+                
+            }
+        }*/
+
+        
+        
+        function menufunction(){
+            if (document.getElementById("menuicon").innerHTML="&#x2630"){
+                document.getElementById("menupop").style.display="block"; 
+                document.getElementById("menuicon").innerHTML="&#x26CC";
+            
+            }else if ((document.getElementById("menuicon").innerHTML="&#x26CC") && (document.getElementById("menupop").style.display="block")){
+                document.getElementById("menupop").style.display="none"; 
+                document.getElementById("menuicon").innerHTML="&#x2630";
+
+            }else{
+                document.getElementById("menupop").style.display="none"; 
+                document.getElementById("menuicon").innerHTML="&#x2630";
+
+            }
+            
+        }        
+                  
+            /*document.getElementById("menupop").style.display="block";
+            document.getElementById("menupop").classList.toggle("show"); 
+            if (onclick == document.getElementById("icon")){
+                document.getElementById("menupop").style.display="none";
+            }*/
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('#menuicon')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];                
+                if (openDropdown.style.display="block") {
+                    openDropdown.style.display="none";
+                    document.getElementById("menuicon").innerHTML="&#x2630";
+                }
+                }
+            }
+            }
+        
+
+    
+    
+    
+    
+    
+    
+    /*     
+    window.onscroll = function() {myFunction()};
+                    
+            var navbar = document.getElementById("mynav");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {                
+
+                if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                } else {
+                navbar.classList.remove("sticky");
+                }
+            }
+            */
+            
+    /*    (window).scroll(function(){                          
+
+            if ((this).scrollTop() > 200) {
+
+                ('#menunav').fadeIn(500);
+
+            } else {
+
+                ('#menunav').fadeOut(500);
+
+            }
+        })*/
+        
+   //     document.getElementById("view").onchange = function() {
+    //        myFunction();
+    //    };
+    
+    
+    </script>
+
+</body>
+</html>
